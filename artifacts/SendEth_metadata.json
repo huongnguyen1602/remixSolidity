@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendViaCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"retest.sol": "SendEth"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"retest.sol": {
+			"keccak256": "0xead5b4399d48cf2f44d024c10334ff8d2d97bdace324d0941cd852bfefccb6d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a9742ff7c943f9e3eabc310f9b44b2d5bb4fe1bd936bac288fd395e96e1a4364",
+				"dweb:/ipfs/QmQ5dzA4brn84nbry2GfZ3zf6FgMP61LQqBXtwxrAo8Bog"
+			]
+		}
+	},
+	"version": 1
+}
