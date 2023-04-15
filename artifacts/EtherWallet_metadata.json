@@ -4,7 +4,56 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test.sol": "EtherWallet"
+			"EtherWallet.sol": "EtherWallet"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -32,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test.sol": {
-			"keccak256": "0x9f55b90283026ee75ce3ff7289f2290cc9ad6371a9d678fc6eb7a7d7ade8b7b9",
+		"EtherWallet.sol": {
+			"keccak256": "0x645550b55e49a6728e76d3799b672499c5e78fd5687a6957b44f00551d240fe3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://62ee853404818ab4e292389778d8e53d93c1d38b543061a037ab4fefcfaaae2e",
-				"dweb:/ipfs/QmVRAoG9TNe9amNL6DL2KBajuk5HiHAGdUGQiN2SG7VDRj"
+				"bzz-raw://0b48c536902ecebbf1ae7152ad419271bb8d50256a20119e3100eae64c326202",
+				"dweb:/ipfs/QmXFBmvf3ijv4QY7qnVF5L9enCtww2wMxYeGaDhe1fkjH9"
 			]
 		}
 	},
