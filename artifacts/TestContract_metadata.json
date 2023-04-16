@@ -6,52 +6,43 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address payable",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "j",
 						"type": "uint256"
 					}
 				],
-				"name": "withdraw",
+				"name": "callMe",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -67,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"EtherWallet.sol": "EtherWallet"
+			"Test.sol": "TestContract"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -81,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"EtherWallet.sol": {
-			"keccak256": "0xb50cfb69415ced2cc42735ae0dbae8704f4c7b4bd3555db3cb920a2f831541f3",
+		"Test.sol": {
+			"keccak256": "0x9874e082d0c04eb6826e860fc0c85130dfbbb714908f926aa7a892e990fdf011",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://59c55f635d1ebe1587e06ddf776c253db1c1d82a192e961e63c4c1d618da8647",
-				"dweb:/ipfs/QmNeSnUHsVMgRgJZRdHg8w7prwagLBduhs1d7E6xYnvNdK"
+				"bzz-raw://83075697c2a5fadc6c48c59475c9e605a2a4e003179825c1a39b633e3df20744",
+				"dweb:/ipfs/QmV4V1Nh6J3qZdpsG3R7wRmEfCB9DMVC5qFoagi7ksxRor"
 			]
 		}
 	},

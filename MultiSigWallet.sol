@@ -52,7 +52,7 @@ contract MultiSigWallet {
     }
 
     constructor(address[] memory _owners, uint _numConfirmationsRequired) {
-        require(_owners.length > 0, "owners required");
+        require(_owners.length > 0, "owners required"); 
         require(
             _numConfirmationsRequired > 0 &&
                 _numConfirmationsRequired <= _owners.length,
@@ -74,7 +74,8 @@ contract MultiSigWallet {
 
     receive() external payable {
         emit Deposit(msg.sender, msg.value, address(this).balance);
-    }
+    }// hàm nhận tiền.
+
 
     function submitTransaction(
         address _to,
@@ -94,7 +95,7 @@ contract MultiSigWallet {
         );
 
         emit SubmitTransaction(msg.sender, txIndex, _to, _value, _data);
-    }
+    } // thêm một transaction vào hàng đợi.
 
     function confirmTransaction(
         uint _txIndex
@@ -118,7 +119,7 @@ contract MultiSigWallet {
 
         transaction.executed = true;
 
-        (bool success, ) = transaction.to.call{value: transaction.value}(
+        (bool success, ) = payable (transaction.to).call{value: transaction.value}(
             transaction.data
         );
         require(success, "tx failed");
