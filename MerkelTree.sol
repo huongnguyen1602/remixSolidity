@@ -35,7 +35,7 @@ contract TestMerkleProof is MerkleProof {
             "bob -> dave",
             "carol -> alice",
             "dave -> bob"
-        ];
+        ]; 
 
         for (uint i = 0; i < transactions.length; i++) {
             hashes.push(keccak256(abi.encodePacked(transactions[i])));
