@@ -46,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Test.sol": "Test"
+			"TestCallWithValue.sol": "Test"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -60,7 +60,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Test.sol": {
+		"TestCallWithValue.sol": {
 			"keccak256": "0x9874e082d0c04eb6826e860fc0c85130dfbbb714908f926aa7a892e990fdf011",
 			"license": "MIT",
 			"urls": [

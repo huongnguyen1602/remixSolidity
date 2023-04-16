@@ -8,40 +8,35 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "leaf",
+						"type": "bytes32"
+					},
+					{
 						"internalType": "uint256",
-						"name": "j",
+						"name": "index",
 						"type": "uint256"
 					}
 				],
-				"name": "callMe",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getData",
+				"name": "verify",
 				"outputs": [
 					{
-						"internalType": "bytes",
+						"internalType": "bool",
 						"name": "",
-						"type": "bytes"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "i",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TestCallWithValue.sol": "TestContract"
+			"MerkelTree.sol": "MerkleProof"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -72,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"TestCallWithValue.sol": {
-			"keccak256": "0x9874e082d0c04eb6826e860fc0c85130dfbbb714908f926aa7a892e990fdf011",
+		"MerkelTree.sol": {
+			"keccak256": "0x8ef6aee05fa3eb33c98ade495558de51da15d3e7160942e06328e79db5c69d48",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83075697c2a5fadc6c48c59475c9e605a2a4e003179825c1a39b633e3df20744",
-				"dweb:/ipfs/QmV4V1Nh6J3qZdpsG3R7wRmEfCB9DMVC5qFoagi7ksxRor"
+				"bzz-raw://a30d61195bccb977d51ce6c80c45480678835207d57aedcbf3934954bae296f2",
+				"dweb:/ipfs/QmZoDjTo6gWnqRirDUhDau711FCwvSKJEQ7vB22hfXKPpz"
 			]
 		}
 	},
