@@ -3,6 +3,11 @@ pragma solidity ^0.8.17;
 
 library IterableMapping {
     // Iterable mapping from address to uint;
+    /*
+        mảng lưu key, mapping lưu index of key
+        address -------- uint 
+        mapping đảm bảo key đã nhập vào.
+    */
     struct Map {
         address[] keys;
         mapping(address => uint) values;
@@ -37,10 +42,10 @@ library IterableMapping {
         if (!map.inserted[key]) {
             return;
         }
-
+        // xóa chỉ mục đã được insert vào và value đi liền với key.// thực hiện trên mapping
         delete map.inserted[key];
         delete map.values[key];
-
+        // 
         uint index = map.indexOf[key];
         uint lastIndex = map.keys.length - 1;
         address lastKey = map.keys[lastIndex];
