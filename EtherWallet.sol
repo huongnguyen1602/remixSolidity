@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 
 contract EtherWallet {
-    address payable public owner;
+    address payable public owner; 
 
     constructor() {
         owner = payable(msg.sender);
@@ -18,4 +18,6 @@ contract EtherWallet {
     function getBalance() external view returns (uint) {
         return address(this).balance;
     }
+    //khởi tạo contract: có người sở hữu, receive() nhận ether, getBalance kiểm ra balance, withdra để rút tiền.
+    
 }
